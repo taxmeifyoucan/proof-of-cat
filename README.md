@@ -2,7 +2,7 @@
 
 Proof-of-Cat is a novel A novel approach to generating randomness for cryptographic systems, utilizing the inherent unpredictability and entropy of domestic felines, also known as cats.
 
-Read the [CatPaper](./proofofcat.pdf)
+Read the *[CatPaper](./proofofcat.pdf)*.
 
 ## Catropy
 
