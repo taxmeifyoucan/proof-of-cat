@@ -13,9 +13,10 @@ Catropy, loosely specified in the Proof-of-Cat CatPaper, is a small devices dedi
 - Sensors - gyroscope, accelerometer
 - Li-ion battery and charging circuit 
 
+The board is currently programmed in micropython and serves a simple API to provide the randomness.
 To create a cat toy, it comes in hand made knitted ball which protects the electronics and provide soft experience. Check pictures below. 
 
 ![image](./src/assets/catropy1.jpeg)
 ![image](./src/assets/catropy2.jpeg)
-![image](./src/assets/catropy3.jpeg)
+![image](./src/assets/catropy3.png)
 
