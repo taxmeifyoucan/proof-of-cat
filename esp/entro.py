@@ -21,7 +21,7 @@ def connect_wifi():
     if  not wlan.isconnected():
         wlan.active(True)
         print("wifi connect")
-        wlan.connect("BuyBitcoin","BordelHackerspaceFuckRaval")
+        wlan.connect("ssid","psswd")
         sleep(2)
         ipadd=wlan.ifconfig()[0]
         print("connected, init", ipadd)
@@ -116,7 +116,7 @@ def rng():
     if not "entropy_str" in globals():
         entropy_str = ""
         while True:
-            sample_period = int(random.uniform(800, 1700))
+            sample_period = int(random.uniform(200, 900))
             sleep_ms(sample_period)
             data = get_data()
             entropy_str = add_entropy(entropy_str, data)
