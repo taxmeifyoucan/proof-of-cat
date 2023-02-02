@@ -16,7 +16,9 @@ Catropy, originally proposed in the Proof-of-Cat CatPaper, is a small device ded
 <details>
 <summary>Check the board scheme</summary>
 
-![image](./src/assets/catropy_front.png) ![image](./src/assets/catropy_back.png) ![image](./src/assets/catropy_scheme.png)
+![image](./src/assets/catropy_front.png) 
+![image](./src/assets/catropy_back.png) 
+![image](./src/assets/catropy_scheme.png)
 
 </details>
 
