@@ -9,16 +9,16 @@ Read the **[CatPaper](./proofofcat.pdf)**.
 This reasearch was conducted as a contribution to [Ethereum KZG Ceremony](https://github.com/ethereum/kzg-ceremony). To participate in the ceremony, CRNG under the name _Catropy_ was built. 
 
 Catropy, originally proposed in the Proof-of-Cat CatPaper, is a small device dedicated to harvesting entropy from cats. Current design is a result of various iterations and consists of a custom board with:
-- ESP32 C2 with wifi, bluetooth, USB-C 
+- ESP32 C3 with wifi, bluetooth, USB-C 
 - Sensors for gathering data - gyroscope, accelerometer
 - Lipo battery 500-800mAh and charging circuit 
 
 <details>
 <summary>Check the board scheme</summary>
 
-![image](./src/assets/catropy_front.png) 
-![image](./src/assets/catropy_back.png) 
-![image](./src/assets/catropy_scheme.png)
+![image](.https://raw.githubusercontent.com/taxmeifyoucan/proof-of-cat/gh-pages/src/assets/catropy_front.png) 
+![image](https://raw.githubusercontent.com/taxmeifyoucan/proof-of-cat/gh-pages/src/assets/catropy_back.png) 
+![image](.https://raw.githubusercontent.com/taxmeifyoucan/proof-of-cat/gh-pages/src/assets/catropy_scheme.png)
 
 </details>
 
