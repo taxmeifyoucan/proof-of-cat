@@ -2,7 +2,7 @@
 
 Proof-of-Cat is a novel approach to generating randomness for cryptographic systems, utilizing the inherent unpredictability and entropy of domestic felines, also known as cats.
 
-Read the **[CatPaper](./proofofcat.pdf)**.
+Read the **[CatPaper](./proofofcat.pdf)** and check Catropy [docs](./docs.md). 
 
 ## Catropy
 
@@ -36,7 +36,8 @@ Otherwise we can ship it to your address. Just add shipping fee to your donation
 Step by step, this is how you get your device: 
 
 - Donate minimum of 0.02ETH (around 30EUR) to catropy.eth or 0x543cbBD2bf6f6eC71254E75b7FEAbb222B143343. You can use mainnet, Arbitrum, Optimism, Polygon, Gnosis chain or Aztec (zk.money, address is @catropy). For donating over other chains, reach out to us. 
-- Send us an email to meow@proofof.cat with your shipping details (your address or pickup option) and sign it with the address you sent donation from. Signing message with a wallet is easy, you can use a tool like [MyCrypto](https://app.mycrypto.com/sign-message). If you are a Protocol Guild member, sign it using your address PG or just contact us to verify it's really you. 
+- Choose a color combination. Balls come in various colors, we prepared gray with colorful ETH logo, pink with white logo and blue with yellow. Check pictures below. If you wish your own color combination, feel free to write us but note it might take few extra days before shipping. 
+- Send us an email to meow@proofof.cat with your shipping details (your address or pickup option), chosen color and sign it with the address you sent donation from. Signing message with a wallet is easy, you can use a tool like [MyCrypto](https://app.mycrypto.com/sign-message). If you are a Protocol Guild member, sign it using your address PG or just contact us to verify it's really you. 
 - Embrace the chaos 
 
 ## Contact
