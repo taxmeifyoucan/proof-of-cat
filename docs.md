@@ -76,9 +76,9 @@ SSID = my_network_name
 PASS= my_network_password
 ```
 
-That's it! Now you can run the program by click green play button. Look into output in the bottom part of Thonny, it will look something like this: 
+Now you can run the program by click green play button. Look into output in the bottom part of Thonny, it will look something like this: 
 
-Note the IP address and save it. 
+Note the IP address of the device and save it, you will need it later. In case device prints something like `0.0.0.0`, run the program again to make sure it connects properly and reports correct IP.  
 
 It also prints battery charge, consider charging the device before using it futher. 
 
