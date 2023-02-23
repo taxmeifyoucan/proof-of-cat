@@ -1,3 +1,3 @@
 # Proof-of-Cat
 
-Check github pages branch or https://proofof.cat
+Proof-of-Cat enables to generate randomness from cats. Check details at https://proofof.cat. 
