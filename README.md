@@ -36,7 +36,7 @@ Otherwise we can ship it to your address. Just add shipping fee to your donation
 Step by step, this is how you get your device: 
 
 - Donate minimum of 0.02ETH (around 30EUR) to catropy.eth or 0x543cbBD2bf6f6eC71254E75b7FEAbb222B143343. You can use mainnet, Arbitrum, Optimism, Polygon, Gnosis chain or Aztec (zk.money, address is @catropy). For donating over other chains, reach out to us. 
-- Choose a color combination. Balls come in various colors, we prepared gray with colorful ETH logo, pink with white logo and blue with yellow. Check pictures below. If you wish your own color combination, feel free to write us but note it might take few extra days before shipping. 
+- Choose a color combination. Balls come in various colors, we prepared gray with colorful ETH logo, pink with white logo and blue with yellow. Check pictures below and more in [assets directory](https://github.com/taxmeifyoucan/proof-of-cat/tree/gh-pages/src/assets). If you wish your own color combination, feel free to write us but note it might take few extra days before shipping. 
 - Send us an email to meow@proofof.cat with your shipping details (your address or pickup option), chosen color and sign it with the address you sent donation from. Signing message with a wallet is easy, you can use a tool like [MyCrypto](https://app.mycrypto.com/sign-message). If you are a Protocol Guild member, sign it using your address PG or just contact us to verify it's really you. 
 - Embrace the chaos 
 
@@ -44,8 +44,7 @@ Step by step, this is how you get your device:
 
 For support, orders and any kind of questions, please contact us at meow@proofof.cat
 
-![image](./src/assets/catropy1.jpeg)
 ![image](./src/assets/catropy2.jpeg)
 ![image](./src/assets/catropy_pink.png)
-![image](./src/assets/catropy3.png)
+![image](./src/assets/catropy1.png) ![image](./src/assets/device_back.png)
 
