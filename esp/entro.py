@@ -43,7 +43,7 @@ def random_shuffle(seq):
     for i in range(l):
         j = random.randrange(l)
         seq[i], seq[j] = seq[j], seq[i]
-
+    return seq 
 def chaos(var):
     a = random.uniform(0, 2)
     b = temp_rand() % 4
@@ -98,7 +98,7 @@ def add_entropy(entropy_str, data):
         str = list(entropy_str)
         r=int(random.uniform(19, 50))
         str = str[r:]
-        random_shuffle(str)
+        str = random_shuffle(str)
         entropy_str=''.join(str)
     return entropy_str
 
