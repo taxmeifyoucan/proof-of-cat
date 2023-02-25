@@ -31,34 +31,44 @@ class StatusLed(NeoPixel):
         self.write()
         self._last_state = color
         
-        
-print ('ws init')
+
+print("Starting Catropy")
+
 led = StatusLed(Pin(8), 1)
 
-print("start sleep - for reset")
-led.show_led((0,0,20))
-sleep(3)
+for i in range(10):
+    led.show_led((200,0,0))
+    sleep_ms(100)
+    led.show_led((0,200,0))
+    sleep_ms(100)
+
+
 
 i2c = I2C(0, sda=Pin(0), scl=Pin(1))
 mpu = MPU6500(i2c)
 naw = Nanoweb()
 wlan = network.WLAN(network.STA_IF)
 
-led.show_led((0,0,0))
-
-
 def connect_wifi():
-    print("wifi connect")
+    print("Connecting wifi")
     try:
         net = WiFiConnect(retries=20)
         wc = net.connect()
+        sleep(2)
         ip_addr = net.ifconfig()[0]
-        print("connected, init:",str(ip_addr))
+        if ip_addr == "0.0.0.0":
+            print("The wifi doesn't seem not be connected corretly, please check your settings and run the program again.")
+            led.show_led((200,0,0))
+        else:
+            print("IP address:",ip_addr)
+            led.show_led((0,200,0))
     except:
-        print("WiFiConnect.ERR")
+        print("The wifi doesn't seem not be connected corretly, please check your settings and run the program again.")
+        led.show_led((200,0,0))
 
      
-connect_wifi() #deactivate to save battery
+connect_wifi()
+#deactivate to save battery
 wlan.active(False)
 
 def get_uptime():
@@ -90,11 +100,12 @@ def get_data():
 
 def rng():
     global entropy_str
+    led.show_led((0,200,0))
     i=0
     if not "entropy_str" in globals():
         entropy_str = ""
         while True:
-            sample_period = int(random.uniform(800, 4000)) # 800,4000
+            sample_period = int(random.uniform(500, 1100)) 
             sleep_ms(sample_period)
             data = get_data()
             entropy_str = add_entropy(mpu, entropy_str, data)
@@ -112,12 +123,13 @@ def rng():
             entropy_str = add_entropy(mpu, entropy_str, data)
         print("Current entropy: {} bits".format(measure_entropy(entropy_str)))
         print("Current lenght:", len(entropy_str))
+    led.show_led((0,0,200))
     return entropy_str
 
-print("start rng")
+print("Starting randomness generation")
 rng()
+print("Initial entropy gathered, starting API")
 
-#define and start web server
 @naw.route("/status")
 async def status(request):
     await request.write("HTTP/1.1 200 OK\r\n")
@@ -130,13 +142,6 @@ async def status(request):
         "Shannon entropy": shannon,
         "lenght": bits}))
 
-@naw.route("/hex")
-def entropy(request):
-    await request.write("HTTP/1.1 200 OK\r\n\r\n")
-    random = rng()
-    await request.write(json.dumps({
-        "": random}))
-    
 @naw.route("/")
 def entropy(request):
     await request.write("HTTP/1.1 200 OK\r\n\r\n")
@@ -146,8 +151,9 @@ def entropy(request):
     
 loop = uasyncio.get_event_loop()
 if DEBUG:
-    print("web server - run")
+    print("Starting webserver")
 
 loop.create_task(naw.run())
 connect_wifi()
+led.show_led((0,0,200))
 loop.run_forever()

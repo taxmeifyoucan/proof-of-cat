@@ -7,7 +7,7 @@ import uhashlib
 from math import log
 
 
-MAX_SIZE = 4050 # 4050
+MAX_SIZE = 4000 # 4000
 TARGET_ENTROPY = 3.99 # 3.99
 
 def chaos(mpu, var):
