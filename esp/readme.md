@@ -1,6 +1,8 @@
-# Catropy software (WIP)
+# Catropy software
 
-ESP32 is collecting data from gyro and acceloremeter, creates arrays of collected coordinates and calculates how much entropy was collected. When it reaches 256 bits, data are extracted using chaos function and served as API or saved to file.
+For usage and details, check https://proofof.cat/docs
+
+ESP32 is collecting data from gyro and acceloremeter, creates arrays of collected coordinates and calculates how much entropy was collected. When it reaches enough bits, data are served as API.
 
 Right now, everything is implemented using micropython but c++ usage to better utilize ESP features is researched. 
 

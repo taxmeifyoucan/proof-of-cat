@@ -11,7 +11,7 @@ from mpu6500 import MPU6500
 from neopixel import NeoPixel
 from wifi_connect import WiFiConnect
 from entropy_lib import MAX_SIZE, TARGET_ENTROPY, add_entropy, measure_entropy
-
+from sys import exit
 
 DEBUG = False
 
@@ -50,26 +50,29 @@ naw = Nanoweb()
 wlan = network.WLAN(network.STA_IF)
 
 def connect_wifi():
-    print("Connecting wifi")
-    try:
-        net = WiFiConnect(retries=20)
-        wc = net.connect()
-        sleep(2)
-        ip_addr = net.ifconfig()[0]
-        if ip_addr == "0.0.0.0":
-            print("The wifi doesn't seem not be connected corretly, please check your settings and run the program again.")
+    if not wlan.isconnected():
+        print("Connecting wifi")
+        try:
+            net = WiFiConnect(retries=20)
+            wc = net.connect()
+            sleep(2)
+            ip_addr = net.ifconfig()[0]
+            if ip_addr == "0.0.0.0":
+                led.show_led((200,0,0))
+                print("The wifi doesn't seem not be connected corretly, please check your settings and run the program again.")
+            else:
+                print("IP address:",ip_addr)
+                led.show_led((0,200,0))
+        except:
+            print("The wifi did not connect, please check your settings and run the program again.")
             led.show_led((200,0,0))
-        else:
-            print("IP address:",ip_addr)
-            led.show_led((0,200,0))
-    except:
-        print("The wifi doesn't seem not be connected corretly, please check your settings and run the program again.")
-        led.show_led((200,0,0))
-
      
 connect_wifi()
+if not wlan.isconnected():
+    exit()
+
 #deactivate to save battery
-wlan.active(False)
+#wlan.active(False)
 
 def get_uptime():
     uptime_s = int(time.ticks_ms() / 1000)
@@ -155,5 +158,8 @@ if DEBUG:
 
 loop.create_task(naw.run())
 connect_wifi()
+if not wlan.isconnected():
+    exit()
 led.show_led((0,0,200))
 loop.run_forever()
+
