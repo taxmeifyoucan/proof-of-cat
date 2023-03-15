@@ -26,7 +26,7 @@ Donations are handled by us, converted to fiat and physically donated to [El Jar
 
 ### Shipping 
 
-You can pickup Catropy personally during **EthDenver** conference or rest of the year in Prague, [Paralelní Polis](https://goo.gl/maps/rJfCFSxNbkSRXrLw9). 
+You can pickup Catropy personally during **EthZurich** conference or rest of the year in Prague, [Paralelní Polis](https://goo.gl/maps/rJfCFSxNbkSRXrLw9) or Barcelona. 
 
 Otherwise we can ship it to your address. Just add shipping fee to your donation, you can use a [shipping estimate calculator](https://coolparcel.com/). (0.5kg package, shipping from Czech republic, 17001). Feel free to reach out if you are not sure, we can ship it first and let you know the exact cost. 
 

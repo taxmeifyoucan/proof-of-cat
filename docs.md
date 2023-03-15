@@ -123,7 +123,7 @@ Calling the address directly will output the main random string. To check device
 
 With the intial entropy collection done and device succesfully responding with entropy, you are ready to use this entropy for KZG Ceremony contribution. 
 
-To do this, you will need Go KZG client. You can download it from the release page, verify its hash and extract it or compile using golang. 
+To do this, you will need [Go KZG client](https://github.com/jsign/go-kzg-ceremony-client/). You can download it from the release page, verify its hash and extract it or compile using golang. 
 
 First lets check it is available and connected to the sequencer by running: 
 ```
