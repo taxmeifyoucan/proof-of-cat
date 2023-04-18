@@ -117,7 +117,8 @@ async def status(request):
 
 @naw.route("/")
 def entropy(request):
-    await request.write("HTTP/1.1 200 OK\r\n\r\n")
+    await request.write("HTTP/1.1 200 OK\r\n")
+    await request.write("Content-Type: application/json\r\n\r\n")
     random = ubinascii.b2a_base64(rng())
     await request.write(json.dumps({
         "": random}))
