@@ -40,9 +40,10 @@ def connect_wifi():
     if not wlan.isconnected():
         print("Connecting wifi")
         try:
-            net = WiFiConnect(retries=20)
+            led.show_led((LED_INTENSITY,LED_INTENSITY,0))
+            net = WiFiConnect(retries=100)
             wc = net.connect()
-            sleep(2)
+
             ip_addr = net.ifconfig()[0]
             if ip_addr == "0.0.0.0":
                 led.show_led((LED_INTENSITY,0,0))
