@@ -119,7 +119,7 @@ async def status(request):
 def entropy(request):
     await request.write("HTTP/1.1 200 OK\r\n")
     await request.write("Content-Type: application/json\r\n\r\n")
-    random = ubinascii.b2a_base64(rng())
+    random = ubinascii.b2a_base64(rng())[:-2]
     await request.write(json.dumps({
         "": random}))
     
