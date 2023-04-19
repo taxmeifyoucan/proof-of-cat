@@ -2,15 +2,15 @@
 
 Proof-of-Cat is a novel approach to generating randomness for cryptographic systems, utilizing the inherent unpredictability and entropy of domestic felines, also known as cats.
 
-Read the **[CatPaper](./proofofcat.pdf)** and check the **Catropy [docs](./docs.md)**. 
+To learn more, read the **[CatPaper](./proofofcat.pdf)** and check the **Catropy [docs](./docs.md)**. 
 
 ## Catropy
 
-_Catropy_ is a CRNG (Cat Random Number Generator) designed as an implementation of Proof-of-Cat. Research and development of this device was intented for participation in [Ethereum KZG Ceremony](https://github.com/ethereum/kzg-ceremony) and supported by EF grant. 
+_Catropy_ is a CRNG (Cat Random Number Generator) designed as an implementation of Proof-of-Cat. Research and development of this device was intented for participation in [Ethereum KZG Ceremony](https://github.com/ethereum/kzg-ceremony) and supported by EF grant. Read the [blog](./blog.md) about how Catropy uses cats to secure Ethereum.
 
 It's a basically toy which can generate randomness from its movement. The circuit board is a microcontroller with wifi and battery which enables to use the device fully remotely. To learn more about hardware design and usage, look into the [documentation](./docs.md). 
 
-The toy is not just a circuit board. It comes in hand-made knitted ball which protects the electronics and provides soft experience. It was demonstrated that it works well not just with cats, [but also core devs](https://twitter.com/liamihorne/status/1617974952413761536). Various versions and color combinations are available. Check example pictures below. 
+The toy is not just a circuit board. It comes in hand-made knitted ball which protects the electronics and provides soft experience. It was demonstrated that it works well not just with [cats](https://twitter.com/i/status/1632706164231118848), [but also core devs](https://twitter.com/liamihorne/status/1617974952413761536). Various versions and color combinations are available. Check example pictures below. 
 
 Device can be used to contribute to the KZG Ceremony but it is not its sole purpose. The Catropy software enables you to use it for generating entropy for anything which needs it. But the device is general purpose and you can reprogram it to utilize the microctroller however you want. For example, another use case being developed is for using the device for medical diagnostic of patients based on tracking their movement and its changes. 
 
@@ -26,7 +26,7 @@ Donations are handled by us, converted to fiat and physically donated to [El Jar
 
 ### Shipping 
 
-You can pickup Catropy personally during **EthZurich** conference or rest of the year in Prague, [Paralelní Polis](https://goo.gl/maps/rJfCFSxNbkSRXrLw9) or Barcelona. 
+You can pickup Catropy personally during **EthPrague** conference or rest of the year in [Paralelní Polis](https://goo.gl/maps/rJfCFSxNbkSRXrLw9) or in Barcelona. 
 
 Otherwise we can ship it to your address. Just add shipping fee to your donation, you can use a [shipping estimate calculator](https://coolparcel.com/). (0.5kg package, shipping from Czech republic, 17001). Feel free to reach out if you are not sure, we can ship it first and let you know the exact cost. 
 

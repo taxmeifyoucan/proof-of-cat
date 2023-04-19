@@ -55,15 +55,14 @@ In case the device doesn't enable shell after connection or runs a program on st
 
 If Thonny doesn't find the device at all, make sure it ON (green LED) and recongized. You can find the port used for communication with devices in `Tools > Options... > Interpreter (tab) > Port or WebREPL`. In case there is are no devices listed, make sure it is connected properly and other programs are not using it.
 
-On Linux systems, make sure the user has correct rights to access the device. Check which board is the board connecting to and setup correct rights, e.g.:
-```
-sudo chmod 666 /dev/ttyACM0  
-```
-or add your user to dialout group
+On Linux systems, make sure the user has correct rights to access the device. Check which board is the board connecting to and setup correct rights by adding your user to dialout group
 ```
 sudo usermod -a -G dialout $USER
 ```
-
+If the issue persists, the last resort would be to allow all users access to device, e.g.:
+```
+sudo chmod 666 /dev/ttyACM0  
+```
 If there are issues with connection or device restarting when wifi turns on, device might require having battery connected as additional power source. Use the battery which came with the device. 
 
 ### Enabling WiFi
