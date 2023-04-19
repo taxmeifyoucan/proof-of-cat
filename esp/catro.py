@@ -40,9 +40,10 @@ def connect_wifi():
     if not wlan.isconnected():
         print("Connecting wifi")
         try:
-            net = WiFiConnect(retries=20)
+            led.show_led((LED_INTENSITY,LED_INTENSITY,0))
+            net = WiFiConnect(retries=100)
             wc = net.connect()
-            sleep(2)
+
             ip_addr = net.ifconfig()[0]
             if ip_addr == "0.0.0.0":
                 led.show_led((LED_INTENSITY,0,0))
@@ -117,8 +118,9 @@ async def status(request):
 
 @naw.route("/")
 def entropy(request):
-    await request.write("HTTP/1.1 200 OK\r\n\r\n")
-    random = ubinascii.b2a_base64(rng())
+    await request.write("HTTP/1.1 200 OK\r\n")
+    await request.write("Content-Type: application/json\r\n\r\n")
+    random = ubinascii.b2a_base64(rng())[:-2]
     await request.write(json.dumps({
         "": random}))
     
