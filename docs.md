@@ -14,13 +14,9 @@ It consists of:
 - USBC for charging and programming the microcontroller 
 - Charging circuit and external Lipo battery 500-800mAh 
 
-
-Board scheme:
-
-![image](./src/assets/catropy_front.png) ![image](./src/assets/catropy_back.png) 
-
-![image](./src/assets/catropy_scheme.png)
-
+The board is open-source and the hardware design with schematics can be found in [the respository](https://github.com/taxmeifyoucan/proof-of-cat/tree/master/pcb
+). 
+![image](./src/assets/catropy_front.png)
 
 ESP microcontroller is flashed with MicroPython firmware and Catropy software which is written in Python. It serves a simple API over local network to provide the created randomness. Current version can be [found here](https://github.com/taxmeifyoucan/proof-of-cat/tree/master/esp). 
 
@@ -98,6 +94,7 @@ Device contains three LEDs which inform you about the device status without conn
     - It shows the device is running, it should be always on when device is powered and switched ON
 - 🟡 yellow LED, next to the battery connection 
     - It means that the connected battery is charging 
+    - In latest version, this is changed to RGB led which is red while charging and green when fully charged 
 - RGB led next to the switch is changing colors based on status of the entropy program
     - When you turn device on, during program startup, it blinks between green and red
     - 🟢 When it stays green, it means it succesfully connected to wifi and started collecting entropy 
@@ -117,6 +114,8 @@ That's it, just make sure it moves randomly :) Random data are now generated fro
 Now you can reach the device via API on the local address you saved during the initial setup. Input this address to your browser or call it using `curl`. The output is a long encoded entropy string. If the IP is not correct, it might changed during a reconnect and you can check it in your WiFi hotspot device, internet router interface. 
 
 Calling the address directly will output the main random string. To check devices status, you can call `/status` path. 
+
+Note that 5 minutes is a result of default speed for collecting entropy configured in the device but in case you would like to use it for a longer time, e.g. during the whole night because your cat is active during night, you can use this [fork of the code](https://github.com/pk910/proof-of-cat/tree/master/esp) which allow entropy collection for more than 10 hours.
 
 ### Contributing to the KZG Ceremony
 
