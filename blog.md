@@ -1,4 +1,8 @@
-# Securing Ethereum using cats
+---
+layout: page
+title: "Securing Ethereum using cats"
+permalink: /blog/
+---
 
 The story of Catropy contributions to Ethereum KZG Ceremony. 
 

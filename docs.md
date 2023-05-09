@@ -1,4 +1,8 @@
-# Catropy docs
+---
+layout: page
+title: "Catropy docs"
+permalink: /docs/
+---
 
 Catropy, originally proposed in the Proof-of-Cat [CatPaper](./proofofcat.pdf), is a small device dedicated to harvesting entropy from cats. 
 
