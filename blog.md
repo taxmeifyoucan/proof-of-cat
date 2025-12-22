@@ -4,6 +4,10 @@ title: "Securing Ethereum using cats"
 permalink: /blog/
 ---
 
+<div style="text-align: right; margin-bottom: 20px;">
+  <strong>ENG</strong> | <a href="./blog_cat.md" style="text-decoration: none; color: #666;">CAT</a>
+</div>
+
 The story of Catropy contributions to Ethereum KZG Ceremony. 
 
 ## What is Catropy? 
