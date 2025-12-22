@@ -1,3 +1,5 @@
+**[ENG](blog.md) | [CAT](blog_cat.md)**
+
 # Securing Ethereum using cats
 
 The story of Catropy contributions to Ethereum KZG Ceremony. 
