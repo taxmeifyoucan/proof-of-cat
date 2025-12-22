@@ -5,7 +5,7 @@ permalink: /blog_cat/
 ---
 
 <div style="text-align: right; margin-bottom: 20px;">
-  <a href="./blog.md" style="text-decoration: none; color: #666;">ENG</a> | <strong>CAT</strong>
+  <a href="./blog" style="text-decoration: none; color: #666;">ENG</a> | <strong>CAT</strong>
 </div>
 
 La història de les contribucions de Catropy a la Cerimònia KZG d'Ethereum. 

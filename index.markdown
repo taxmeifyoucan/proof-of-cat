@@ -4,7 +4,7 @@ title: ""
 ---
 
 <div style="text-align: right; margin-bottom: 20px;">
-  <strong>ENG</strong> | <a href="./index_cat.md" style="text-decoration: none; color: #666;">CAT</a>
+  <strong>ENG</strong> | <a href="./index_cat" style="text-decoration: none; color: #666;">CAT</a>
 </div>
 
 # Proof-of-Cat: Cat as an entropy generator

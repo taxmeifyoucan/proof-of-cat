@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <div style="text-align: right; margin-bottom: 20px;">
-  <strong>ENG</strong> | <a href="./blog_cat.md" style="text-decoration: none; color: #666;">CAT</a>
+  <strong>ENG</strong> | <a href="./blog_cat" style="text-decoration: none; color: #666;">CAT</a>
 </div>
 
 The story of Catropy contributions to Ethereum KZG Ceremony. 

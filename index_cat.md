@@ -4,7 +4,7 @@ title: ""
 ---
 
 <div style="text-align: right; margin-bottom: 20px;">
-  <a href="./index.markdown" style="text-decoration: none; color: #666;">ENG</a> | <strong>CAT</strong>
+  <a href="./index" style="text-decoration: none; color: #666;">ENG</a> | <strong>CAT</strong>
 </div>
 
 # Proof-of-Cat: El gat com a generador d'entropia
